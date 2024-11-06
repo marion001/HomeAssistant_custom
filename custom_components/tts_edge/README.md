@@ -4,7 +4,6 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
 
 - Cấu Hình File <b>configuration.yaml</b>
-  - Nếu có nhiều key sẽ thêm thành nhiều dòng, càng nhiều key càng tốt, key hết hạn sẽ tự động chuyển sang key tiếp theo (đồng thời key hết hạn sẽ được đưa vào danh sách đen và tái sử dụng khi sang ngày hôm sau)
     
         tts_edge:
           lang: 'vi-VN'
