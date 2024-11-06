@@ -13,7 +13,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
             - '99999999999999999999999999'
 - Cấu Hình File <b>input_number.yaml</b> (Chỉnh tốc độ đọc)
 
-      input_number: 
+
         tts_zalo_speed:
           name: TTS Zalo Speed
           icon: mdi:speedometer
