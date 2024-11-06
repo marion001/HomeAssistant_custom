@@ -1,0 +1,10 @@
+{
+  "domain": "tts_zalo",
+  "name": "TTS Zalo",
+  "version": "1.1",
+  "documentation": "",
+  "dependencies": [],
+  "codeowners": ["@marion001"],
+  "requirements": []
+  "author": "Vũ Tuyển"
+}
