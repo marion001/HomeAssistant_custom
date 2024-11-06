@@ -63,13 +63,13 @@ TTS EDGE Azure: Chuyển văn bản thành giọng nói của Microsoft
             name: Nhập nội dung phát thông báo
           - entity: input_select.tts_media_player_speaker
             icon: mdi:speaker-wireless
-          - entity: input_select.tts_zalo_speaker_id
+          - entity: input_select.tts_edge_speaker_id
             name: Giọng Đọc
-          - entity: input_number.tts_zalo_speed
+          - entity: input_number.tts_edge_speed
             name: Tốc Độ Đọc
-          - entity: script.zalo_text_to_speak
+          - entity: script.edge_text_to_speak
             icon: mdi:send-check-outline
             name: "Phát Thông Báo:"
         state_color: true
-        title: Phát Thông Báo TTS Zalo
+        title: Phát Thông Báo TTS EDGE
 
