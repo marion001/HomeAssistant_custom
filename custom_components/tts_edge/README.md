@@ -1,16 +1,14 @@
 TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
-- Cần tải về và sao chép thư mục <b>tts_zalo</b> vào trong thư mục <b>custom_components</b> sẽ có đường dẫn dạng: <b>"custom_components/tts_zalo/"</b>
+- Cần tải về và sao chép thư mục <b>tts_edge</b> vào trong thư mục <b>custom_components</b> sẽ có đường dẫn dạng: <b>"custom_components/tts_edge/"</b>
 
 
 - Cấu Hình File <b>configuration.yaml</b>
   - Nếu có nhiều key sẽ thêm thành nhiều dòng, càng nhiều key càng tốt, key hết hạn sẽ tự động chuyển sang key tiếp theo (đồng thời key hết hạn sẽ được đưa vào danh sách đen và tái sử dụng khi sang ngày hôm sau)
     
-        tts_zalo:
-          apikey:
-            - '645g645g654g6546456ggtv43g4'
-            - '888888888888888888888888888'
-            - '99999999999999999999999999'
+        tts_edge:
+          lang: 'vi-VN'
+    
 - Cấu Hình File <b>input_number.yaml</b> (Chỉnh tốc độ đọc)
 
 
@@ -53,7 +51,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
   
         zalo_text_to_speak:
           sequence:  
-          - service: tts_zalo.say
+          - service: tts_edge.say
             data_template:
               entity_id: "{{ states('input_select.tts_media_player_speaker') }}"
               message: '{{ states("input_text.tts_input_text") }}'
