@@ -1,0 +1,10 @@
+{
+  "domain": "tts_edge",
+  "name": "TTS EDGE AZURE",
+  "version": "1.1",
+  "documentation": "https://github.com/marion001/HomeAssistant_custom/tree/main/custom_components/tts_edge",
+  "dependencies": [],
+  "codeowners": ["@marion001"],
+  "requirements": [],
+  "author": "Vũ Tuyển"
+}
