@@ -81,7 +81,7 @@ def setup(hass, cfg):
                                 output_file = os.path.join(target_directory, f'{DOMAIN}.mp3')
                                 with open(output_file, 'wb') as audio_file:
                                     audio_file.write(audio_response.content)
-                                logger.warning(f"[{DOMAIN}] Tệp âm thanh tts_zalo: {output_file}")
+                                logger.warning(f"[{DOMAIN}] Tệp âm thanh ({str(TTS.data.get(CONFIG_message))}): {output_file}")
                                 Player_Hass = {
                                     'entity_id': Id_Speak_Hass,
                                     'media_content_id': f"/local/{DOMAIN}/{DOMAIN}.mp3",
