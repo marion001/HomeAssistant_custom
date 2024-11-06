@@ -4,6 +4,11 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
 
 - Cấu Hình File <b>configuration.yaml</b>
-
-
-
+  - nếu có nhiều key sẽ thêm thành nhiều dòng
+    
+        tts_zalo:
+          apikey:
+            - '645g645g654g6546456ggtv43g4'
+            - '888888888888888888888888888'
+            - '99999999999999999999999999'
+- Cấu Hình File <b>scripts.yaml</b>
