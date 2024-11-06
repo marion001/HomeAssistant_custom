@@ -1,10 +1,10 @@
 TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
-- Cần sao chép thư mục <b>tts_zalo</b> vào trong thư mục <b>custom_components</b> sẽ có đường dẫn dạng: <b>"custom_components/tts_zalo"</b>
+- Cần tải về và sao chép thư mục <b>tts_zalo</b> vào trong thư mục <b>custom_components</b> sẽ có đường dẫn dạng: <b>"custom_components/tts_zalo/"</b>
 
 
 - Cấu Hình File <b>configuration.yaml</b>
-  - nếu có nhiều key sẽ thêm thành nhiều dòng
+  - Nếu có nhiều key sẽ thêm thành nhiều dòng, càng nhiều key càng tốt, key hết hạn sẽ tự động chuyển sang key tiếp theo (đồng thời key hết hạn sẽ được đưa vào danh sách đen và tái sử dụng khi sang ngày hôm sau)
     
         tts_zalo:
           apikey:
