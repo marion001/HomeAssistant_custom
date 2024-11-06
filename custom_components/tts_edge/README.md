@@ -1,4 +1,4 @@
-TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
+TTS EDGE Azure: Chuyển văn bản thành giọng nói của Microsoft
 
 - Cần tải về và sao chép thư mục <b>tts_edge</b> vào trong thư mục <b>custom_components</b> sẽ có đường dẫn dạng: <b>"custom_components/tts_edge/"</b>
 
