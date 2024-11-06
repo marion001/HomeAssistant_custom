@@ -11,13 +11,13 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 - Cấu Hình File <b>input_number.yaml</b> (Chỉnh tốc độ đọc)
 
 
-        tts_zalo_speed:
-          name: TTS Zalo Speed
+        tts_edge_speed:
+          name: TTS EDGE Speed
           icon: mdi:speedometer
-          min: 0.8
-          max: 1.2
+          min: 0.1
+          max: 1.9
           step: 0.1
-          initial: 0.9
+          initial: 1.2
 
 
  - Cấu Hình File <b>input_text.yaml</b> (Nội dung văn bản cần phát thông báo)
@@ -27,14 +27,12 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
 - Cấu Hình File <b>input_select.yaml</b> (Chọn giọng đọc vả chọn thiết bị phát thông báo, cần thay các media_player.xxxxxxx tương ứng với các thiết bị của bạn)
 
-        tts_zalo_speaker_id:
+        tts_edge_speaker_id:
           name: Giọng đọc TTS Zalo
           options:
-            - Nữ (Miền Nam)
-            - Nữ (Miền Bắc)
-            - Nam (Miền Nam)
-            - Nam (Miền Bắc)
-          initial: Nữ (Miền Nam)
+            - vi-VN-HoaiMyNeural
+            - vi-VN-NamMinhNeural
+          initial: vi-VN-HoaiMyNeural
           icon: mdi:account-voice
 
         tts_media_player_speaker:
@@ -48,25 +46,14 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
 - Cấu Hình File <b>scripts.yaml</b> (Thực thi chuyển đổi và phát thông báo tts)
   
-        zalo_text_to_speak:
+        edge_text_to_speak:
           sequence:  
           - service: tts_edge.say
             data_template:
               entity_id: "{{ states('input_select.tts_media_player_speaker') }}"
               message: '{{ states("input_text.tts_input_text") }}'
-              speed: '{{ states("input_number.tts_zalo_speed") }}'
-              speaker_id: >
-                {% if states("input_select.tts_zalo_speaker_id") == "Nữ (Miền Nam)" %}
-                  1
-                {% elif states("input_select.tts_zalo_speaker_id") == "Nữ (Miền Bắc)" %}
-                  2
-                {% elif states("input_select.tts_zalo_speaker_id") == "Nam (Miền Nam)" %}
-                  3
-                {% elif states("input_select.tts_zalo_speaker_id") == "Nam (Miền Bắc)" %}
-                  4
-                {% else %}
-                  1
-                {% endif %}
+              rate: '{{ states("input_number.tts_edge_speed") }}'
+              name: > '{{ states("input_select.tts_edge_speaker_id") }}'
 
 - Cấu hình entities <b>ui lovelace</b>
 
