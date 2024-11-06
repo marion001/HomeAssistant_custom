@@ -20,6 +20,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
           min: 0.8
           max: 1.2
           step: 0.1
+          initial: 0.9
 
 
  - Cấu Hình File <b>input_text.yaml</b> (Nội dung văn bản cần phát thông báo)
@@ -27,7 +28,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
         tts_input_text:
           name: "Nhập Nội Dung"
 
-- Cấu Hình File <b>input_number.yaml</b> (Chọn giọng đọc)
+- Cấu Hình File <b>input_select.yaml</b> (Chọn giọng đọc)
 
         tts_zalo_speaker_id:
           name: Giọng đọc TTS Zalo
