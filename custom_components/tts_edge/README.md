@@ -53,7 +53,7 @@ TTS EDGE Azure: Chuyển văn bản thành giọng nói của Microsoft
               entity_id: "{{ states('input_select.tts_media_player_speaker') }}"
               message: '{{ states("input_text.tts_input_text") }}'
               rate: '{{ states("input_number.tts_edge_speed") }}'
-              name: > '{{ states("input_select.tts_edge_speaker_id") }}'
+              name: '{{ states("input_select.tts_edge_speaker_id") }}'
 
 - Cấu hình entities <b>ui lovelace</b>
 
