@@ -28,7 +28,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
         tts_input_text:
           name: "Nhập Nội Dung"
 
-- Cấu Hình File <b>input_select.yaml</b> (Chọn giọng đọc vả chọn thiết bị phát thông báo)
+- Cấu Hình File <b>input_select.yaml</b> (Chọn giọng đọc vả chọn thiết bị phát thông báo, cần thay các media_player.xxxxxxx tương ứng với các thiết bị của bạn)
 
         tts_zalo_speaker_id:
           name: Giọng đọc TTS Zalo
@@ -50,7 +50,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 
 
 - Cấu Hình File <b>scripts.yaml</b> (Thực thi chuyển đổi và phát thông báo tts)
-- 
+  
         zalo_text_to_speak:
           sequence:  
           - service: tts_zalo.say
@@ -70,3 +70,22 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
                 {% else %}
                   1
                 {% endif %}
+
+- Cấu hình entities <b>ui lovelace</b>
+
+        type: entities
+        entities:
+          - entity: input_text.tts_input_text
+            name: Nhập nội dung phát thông báo
+          - entity: input_select.tts_media_player_speaker
+            icon: mdi:speaker-wireless
+          - entity: input_select.tts_zalo_speaker_id
+            name: Giọng Đọc
+          - entity: input_number.tts_zalo_speed
+            name: Tốc Độ Đọc
+          - entity: script.zalo_text_to_speak
+            icon: mdi:send-check-outline
+            name: "Phát Thông Báo:"
+        state_color: true
+        title: Phát Thông Báo TTS Zalo
+
