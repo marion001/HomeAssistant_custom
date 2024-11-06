@@ -50,10 +50,10 @@ def setup(hass, cfg):
     def zalo_tts(TTS):
         Id_Speak_Hass = TTS.data.get(CONFIG_id_media_player)
         if not Id_Speak_Hass:
-            logger.warning(f"[{DOMAIN}] Cần nhập id thiết bị phát thông báo")
+            logger.error(f"[{DOMAIN}] Cần nhập id thiết bị phát thông báo")
             return
         if not str(TTS.data.get(CONFIG_message)):
-            logger.warning(f"[{DOMAIN}] Cần nhập nội dung thông báo tts_zalo")
+            logger.error(f"[{DOMAIN}] Cần nhập nội dung thông báo tts_zalo")
             return
         
         url = "https://api.zalo.ai/v1/tts/synthesize"
