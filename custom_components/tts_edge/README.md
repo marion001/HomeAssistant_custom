@@ -28,7 +28,7 @@ TTS Zalo: Chuyển văn bản thành giọng nói của Zalo
 - Cấu Hình File <b>input_select.yaml</b> (Chọn giọng đọc vả chọn thiết bị phát thông báo, cần thay các media_player.xxxxxxx tương ứng với các thiết bị của bạn)
 
         tts_edge_speaker_id:
-          name: Giọng đọc TTS Zalo
+          name: Giọng đọc TTS EDGE
           options:
             - vi-VN-HoaiMyNeural
             - vi-VN-NamMinhNeural
