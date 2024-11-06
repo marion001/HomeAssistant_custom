@@ -73,3 +73,9 @@ TTS EDGE Azure: Chuyển văn bản thành giọng nói của Microsoft
         state_color: true
         title: Phát Thông Báo TTS EDGE
 
+- Test thử trong công cụ nhà phát triển:
+
+        service: tts_edge.say
+        data:
+          entity_id: media_player.esp32_media_speaker_player
+          message: "chào tuyển nhé, mấy giờ rồi nhỉ"
