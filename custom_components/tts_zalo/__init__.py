@@ -48,10 +48,14 @@ def clear_expired_keys():
 def setup(hass, cfg):
     expired_keys = clear_expired_keys()
     def zalo_tts(TTS):
-        if not str(TTS.data.get(CONFIG_message, '')):
+        Id_Speak_Hass = TTS.data.get(CONFIG_id_media_player)
+        if not Id_Speak_Hass:
+            logger.warning(f"[{DOMAIN}] Cần nhập id thiết bị phát thông báo")
+            return
+        if not str(TTS.data.get(CONFIG_message)):
             logger.warning(f"[{DOMAIN}] Cần nhập nội dung thông báo tts_zalo")
             return
-        Id_Speak_Hass = TTS.data.get(CONFIG_id_media_player)
+        
         url = "https://api.zalo.ai/v1/tts/synthesize"
         payload = {
             'speaker_id': str(TTS.data.get(TTS_speaker_id, 1)),
