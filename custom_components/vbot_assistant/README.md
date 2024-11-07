@@ -6,4 +6,4 @@
       vbot_assistant:
           api_url: 'http://192.168.14.113:5002'
 
-- Khơi Động Lại Home Assistant để nhận custom_components vbot_assistant
+- Khởi Động Lại Home Assistant để nhận custom_components vbot_assistant
