@@ -2,7 +2,7 @@
     "domain": "vbot_assistant",
     "name": "Vbot Assistant",
     "version": "1.0",
-    "documentation": "https://example.com",
+    "documentation": "https://github.com/marion001/HomeAssistant_custom/tree/main/custom_components/vbot_assistant",
     "dependencies": [],
     "codeowners": ["@marion001"],
     "requirements": [],
