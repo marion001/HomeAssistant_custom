@@ -1,0 +1,20 @@
+vbot_assistant_play:
+  description: "Phát nhạc từ Vbot Assistant Media Player"
+  fields:
+    entity_id:
+      description: "ID của thực thể media_player"
+      example: "media_player.vbot_assistant_media_player"
+
+vbot_assistant_pause:
+  description: "Tạm dừng nhạc từ Vbot Assistant Media Player"
+  fields:
+    entity_id:
+      description: "ID của thực thể media_player"
+      example: "media_player.vbot_assistant_media_player"
+
+vbot_assistant_stop:
+  description: "Dừng nhạc từ Vbot Assistant Media Player"
+  fields:
+    entity_id:
+      description: "ID của thực thể media_player"
+      example: "media_player.vbot_assistant_media_player"
