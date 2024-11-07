@@ -1,0 +1,42 @@
+action: vbot_assistant.media_control
+data:
+  media_link: 'https://vutuyen.dev/1.mp3'
+  media_name: "Thuyền quyênn"
+  media_player_source: "Home Assistant"
+  action: 'play'
+
+
+action: vbot_assistant.media_control
+data:
+  action: 'pause'
+
+
+action: vbot_assistant.media_control
+data:
+  action: 'stop'
+
+
+action: vbot_assistant.media_control
+data:
+  action: 'resume'
+
+
+action: vbot_assistant.volume
+data:
+  action: up #down, min, max
+
+
+action: vbot_assistant.volume
+data:
+  action: setup
+  value: 80 #0->100
+
+
+action: vbot_assistant.chatbot
+data:
+  message: mấy giờ rồi
+
+
+service: vbot_assistant.tts
+data:
+  message: "chào tuyển"
