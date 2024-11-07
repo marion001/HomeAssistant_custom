@@ -1,0 +1,10 @@
+{
+    "domain": "vbot_assistant",
+    "name": "Vbot Assistant",
+    "version": "1.0",
+    "documentation": "https://example.com",
+    "dependencies": [],
+    "codeowners": ["@marion001"],
+    "requirements": [],
+    "author": "Vũ Tuyển"
+}
